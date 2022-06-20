@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+input {
+  background-color: transparent;
+  border: transparent;
+  border-bottom: solid black 1px;
+  width: 100%;
+  outline: none;
+  padding-left: 30px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 40px;
+}
+
+.item {
+  color: white;
+  font-size: 20px;
+  padding: 0px;
+}
+
+.item:hover {
+  font-weight: bold;
+}
+
+.item:hover { text-decoration: none; }
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+a:focus {outline:0;}
+
+button {
+  padding-left: 20px;
+  padding-right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:focus {outline:0;}
+
+.menu_item {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.highlight {
+  color: #7C58FF;
+}
+
+.page {
+  display: flex;
+}
+
+.menubar {
+  height: 100vh;
+  width: calc(100% / 6);
+}
+
+.menubar .logo_container {
+  background-color: #412A8B;
+  color: white;
+  font-style: bold;
+  display: flex;
+  width: 100%;
+  height: 10%;
+  padding-left: 30px;
+  align-items: center;
+}
+
+.menubar .body_container {
+  background-color: #26194D;
+  color: white;
+  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 80%;
+}
+
+.menubar .profile_container {
+  background-color: #2C1E5A;
+  color: white;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  height: 10%;
+  align-items: center;
+}
+
+.main_container {
+  background-color: #EFEFEF;
+  height: 100vh;
+  width: calc(100% / 6 * 5);
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 15%;
+  padding-right: 15%;
+  overflow: scroll;
+}
+
+.header_container { 
+  padding-bottom: 40px;
+}
+
+.method_overview {
+  margin-bottom: 40px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.method_overview:hover {
+  scale: 1.01;
+}
+
+.header_overview {
+  background-color: #412A8B;
+  border-radius: 5px 5px 0px 0px;
+  color: white;
+  padding: 10px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.body_overview {
+  background-color: white;
+  border: solid #412A8B 1px;
+  border-radius: 0px 0px 5px 5px;
+  padding: 15px;
+}
+
+.create {
+  border-radius: 0px;
+}
+
+.code_block {
+  background-color: #1A183F;
+  display: flex;
+}
+
+.tags {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+}
+
+.tag {
+  background-color: #8C73DE;
+  border-radius: 3px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 10px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.search_bar {
+  padding-bottom: 40px;
+}
+
+.icon {
+  position: relative;
+  top: 28px;
+}
+
+.footer_container {
+  background-color: white;
+  width: calc(100% / 6 * 5);
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  left: calc(100% / 6);
+}
+
+.footer_buttons_container {
+  width: 100%;
+  height: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_button {
+  opacity: 50%;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.footer_button:hover {
+  opacity: 80%;
+}
+
+.line_numbers {
+  color: #767499;
+}
+
+.code_container {
+  padding-left: 15px;
+  width: 100%;
+  color: white;
+  opacity: 0.7;
+}
+
+.code_textarea {
+  height: 100%;
+  color: white;
+  min-height: 20vh;
+}
+
+textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.create_input {
+  margin-top: 20px;
+  background-color: white;
+  border: solid #412A8B 1px;
+  padding: 10px;
+  font-size: medium;
+}
+
+.login_link {
+  color: white;
+  font-size: medium;
+}
+
+.login_container {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.display {
+  background-color:#412A8B;
+  color: white;
+  padding: 10px;
+}
+
+.login {
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.brand_title {
+  font-size: 200px;
+  margin: 0px;
+}
+
+.login_field {
+  font-size: 15px;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  background-color:#7C58FF;
+}
+
+.btn {
+  background-color:#412A8B;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: 0.1s;
+}
+
+.btn:hover {
+  background-color: #5737c2;
+}
+
+.btn:active {
+  scale: 0.9;
+}
+
+.seperator {
+  padding-left: 10px;
+  padding-right: 10px;
+}
